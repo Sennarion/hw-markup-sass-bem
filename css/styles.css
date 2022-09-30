@@ -672,27 +672,30 @@ img {
   line-height: calc(24 / 14);
 }
 
-.custom-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 7px;
-  background-color: transparent;
-  border: 1px solid var(--title-color);
-  border-radius: 2px;
-  color: transparent;
-  transition: border-color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function), color 250ms var(--timing-function);
-}
-
-.form-checkbox:checked + .custom-checkbox {
-  border-color: transparent;
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
 .checkbox-icon {
-  fill: currentColor;
+  margin-right: 7px;
+}
+
+.icon-unchecked {
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.icon-checked {
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.form-checkbox:checked + .checkbox-icon .icon-unchecked {
+  opacity: 0;
+}
+
+.form-checkbox:checked + .checkbox-icon .icon-checked {
+  opacity: 1;
+}
+
+.policy-text {
+  user-select: none;
 }
 
 .modal-policy {
