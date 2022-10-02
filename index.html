@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -64,7 +64,7 @@
       </section>
       <section class="section section-feature">
         <div class="container">
-          <h2 class="section-title visually-hidden">Особливості</h2>
+          <h2 class="section__title visually-hidden">Особливості</h2>
           <ul class="feature-list">
             <li class="feature-list__item">
               <div class="feature-list__pic">
@@ -115,7 +115,7 @@
       </section>
       <section class="section section-work">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
               <img
@@ -149,7 +149,7 @@
       </section>
       <section class="section section-team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
               <img
@@ -324,7 +324,7 @@
       </section>
       <section class="section section-client">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="client-list">
             <li class="client-list__item">
               <a href="#" class="client-list__link" aria-label="Логотип компанії">
@@ -371,74 +371,6 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal__close-button" type="button" data-modal-close>
-            <svg class="modal__close-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <p class="modal__form-name">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="form" name="modal-form">
-            <div class="form__group">
-              <label class="form__label" for="name">Ім'я</label>
-              <div class="form__input-wrapper">
-                <input class="form__input" type="text" name="name" id="name" />
-                <svg class="form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="tel">Телефон</label>
-              <div class="form__input-wrapper">
-                <input class="form__input" type="tel" name="tel" id="tel" />
-                <svg class="form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="mail">Пошта</label>
-              <div class="form__input-wrapper">
-                <input class="form__input" type="email" name="mail" id="mail" />
-                <svg class="form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form__group form__group--large">
-              <label class="form__label" for="text">Коментар</label>
-              <textarea
-                class="form__input form__input--large"
-                name="text"
-                id="text"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
-            <label class="checkbox">
-              <span class="checkbox__policy"
-                >Погоджуюся з розсилкою та приймаю
-                <a class="checkbox__link" href="#">Умови договору</a></span
-              >
-              <input
-                class="checkbox__input visually-hidden"
-                type="checkbox"
-                value="true"
-                name="check"
-              />
-              <svg class="checkbox__icon" width="16" height="15">
-                <use
-                  class="checkbox__unchecked-icon"
-                  href="./images/icons.svg#icon-unchecked"
-                ></use>
-                <use class="checkbox__checked-icon" href="./images/icons.svg#icon-checked"></use>
-              </svg>
-            </label>
-            <button class="button form__button" type="submit">Відправити</button>
-          </form>
-        </div>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -451,7 +383,7 @@
               <p class="page-adress__text">м. Київ, пр-т Лесі Українки, 26</p>
               <ul class="adress-list">
                 <li class="adress-list__item">
-                  <a class="adress-list__link adress-link" href="mailto:info@devstudio.com"
+                  <a class="adress-list__link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -530,6 +462,71 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="close-button__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal__form-name">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="form" name="modal-form">
+          <div class="form__group">
+            <label class="form__label" for="name">Ім'я</label>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="text" name="name" id="name" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="tel">Телефон</label>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="tel" name="tel" id="tel" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="mail">Пошта</label>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="email" name="mail" id="mail" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form__group form__group--large">
+            <label class="form__label" for="text">Коментар</label>
+            <textarea
+              class="form__input form__input--large"
+              name="text"
+              id="text"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <label class="checkbox">
+            <span class="checkbox__policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="checkbox__link" href="#">Умови договору</a></span
+            >
+            <input
+              class="checkbox__input visually-hidden"
+              type="checkbox"
+              value="true"
+              name="check"
+            />
+            <svg class="checkbox__icon" width="16" height="15">
+              <use class="checkbox__unchecked-icon" href="./images/icons.svg#icon-unchecked"></use>
+              <use class="checkbox__checked-icon" href="./images/icons.svg#icon-checked"></use>
+            </svg>
+          </label>
+          <button class="button form__button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+:root {
+  /* COLORS */
+
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --black-color: #000000;
+  --neutral-dark-color: rgba(255, 255, 255, 0.6);
+  --primary-white-color: #ffffff;
+  --primary-dark-color: #2f303a;
+  --primary-light-color: #f5f4fa;
+  --item-border-color: #eeeeee;
+  --header-border-color: #ececec;
+  --icon-color: #afb1b8;
+  --footer-links-color: rgba(255, 255, 255, 0.1);
+  --cards-background-color: rgba(47, 48, 58, 0.8);
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
+  --backdrop-background-color: rgba(0, 0, 0, 0.2);
+  --button-border-color: rgba(0, 0, 0, 0.1);
+  --input-border-color: rgba(33, 33, 33, 0.2);
+  --button-hover-color: #188ce8;
+  --footer-form-border-color: rgba(255, 255, 255, 0.3);
+  --form-placeholder-color: rgba(117, 117, 117, 0.5);
+
+  /* TRANSITIONS */
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,23 @@
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.work-list__item {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.work-list__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  @extend centeredFlex;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  background-color: var(--cards-background-color);
+}

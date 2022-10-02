@@ -1,0 +1,29 @@
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-list__item {
+  flex-basis: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.client-list__link {
+  @extend %centeredFlex;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icon-color);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.client-list__icon {
+  fill: currentColor;
+}
