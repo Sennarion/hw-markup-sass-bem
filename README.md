@@ -1,1 +1,1 @@
-# goit-markup-hw-07
+SASS preprocessor and BEM
